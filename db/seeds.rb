@@ -51,3 +51,19 @@
        </p>},
    image_url: 'adrpo.jpg',
    price: 46.00)
+
+ Product.create!(title: 'adgdfgsdfgbdfgbdsfg',
+                 description:
+                     %{<p>
+       <em>Why Ruby Is Slow, and How to Fix It</em>
+       You don’t have to accept slow Ruby or Rails performance. In this
+       comprehensive guide to Ruby optimization, you’ll learn how to write
+       faster Ruby code—but that’s just the beginning. See exactly what makes
+       Ruby and Rails code slow, and how to fix it. Alex Dymo will guide you
+       through perils of memory and CPU optimization, profiling, measuring,
+       performance testing, garbage collection, and tuning. You’ll find that
+       all those “hard” things aren’t so difficult after all, and your code
+       will run orders of magnitude faster.
+       </p>},
+                 image_url: 'adrpo.jpg',
+                 price: 40.00)
