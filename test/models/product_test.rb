@@ -52,17 +52,15 @@ http://a.b.c/x/y/z/fred.gif }
   end
   end
   test "product is not valid without a unique title - i18n" do
-    product = Product.new(title: products(:ruby).title,
+    product = Product.new(title: products(:one).title,
                           description: "yyy",
                           price:    1,
                           image_url:  "fred.gif")
     assert product.invalid?
     assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
   end
-
   def create
     @product = Product.new(product_params)
-
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product,
@@ -74,9 +72,12 @@ http://a.b.c/x/y/z/fred.gif }
         format.html { render :new }
         format.json { render json: @product.errors,
                              status: :unprocessable_entity }
-
       end
-
     end
   end
+
+
+
+
+
   end
