@@ -11,6 +11,10 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
+  test "Product is not valid with title less then 10 characters long" do
+    product = products(:one)
+    assert product.invalid?
+  end
 
 test "product price must be positive" do
   product =Product.new(title: "My book Title",
@@ -52,7 +56,7 @@ http://a.b.c/x/y/z/fred.gif }
   end
   end
   test "product is not valid without a unique title - i18n" do
-    product = Product.new(title: products(:one).title,
+    product = Product.new(title: products(:ruby).title,
                           description: "yyy",
                           price:    1,
                           image_url:  "fred.gif")

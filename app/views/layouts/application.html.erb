@@ -15,11 +15,20 @@
     </header>
     <section class="content">
       <nav class="side_nav">
+        <% if  @index %>
+          <p>Last Pages visited:</p>
+          <ul>
+            <% @index.each do |index| %>
+            <li><%= link_to index, index %></li>
+            <% end %>
+          </ul>
+          <% end %>
         <ul>
           <li><a href="/">Home</a> </li>
           <li><a href="/questions">Questions</a></li>
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contacts</a></li>
+          <li><p><%= Time.now %></p></li>
         </ul>
       </nav>
           <main class="<%= controller.controller_name %>">
