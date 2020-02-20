@@ -15,13 +15,11 @@
     </header>
     <section class="content">
       <nav class="side_nav">
-        <% if  @index %>
-          <p>Last Pages visited:</p>
-          <ul>
-            <% @index.each do |index| %>
-            <li><%= link_to index, index %></li>
-            <% end %>
-          </ul>
+        <% if @cart %>
+
+        <div id="cart" class="carts">
+          <%= render @cart %>
+        </div>
           <% end %>
         <ul>
           <li><a href="/">Home</a> </li>
