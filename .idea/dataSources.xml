@@ -13,5 +13,21 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\user\work\depot\db\test.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails depot: development" uuid="cd5febd0-e8ae-4547-9ccc-05b825ef4556">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\user\work\depot\db\development.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails depot: test" uuid="95a8ec5c-f423-4e14-84d4-ff5401466781">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\user\work\depot\db\test.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
