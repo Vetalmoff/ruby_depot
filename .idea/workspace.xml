@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9460f750-471a-4fae-b128-93cec11223dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/line_items/decrement.js.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/store.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/store.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/carts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/carts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/line_item.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/carts/_cart.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/carts/_cart.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/carts/destroy.js.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/carts/destroy.js.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/carts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/carts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/carts/destroy.js.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/line_items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/line_items.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -321,7 +315,8 @@
       <workItem from="1582575246878" duration="570000" />
       <workItem from="1582577375232" duration="218000" />
       <workItem from="1582578184996" duration="19000" />
-      <workItem from="1582578223297" duration="7271000" />
+      <workItem from="1582578223297" duration="10571000" />
+      <workItem from="1582624124270" duration="2630000" />
     </task>
     <servers />
   </component>

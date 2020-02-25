@@ -1,6 +1,6 @@
 class LineItemsController < ApplicationController
   include CurrentCart
-  before_action :set_cart, only: [:create]
+  before_action :set_cart, only: [:create, :decrement]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
   # GET /line_items
@@ -61,9 +61,26 @@ class LineItemsController < ApplicationController
     @line_item.destroy
     respond_to do |format|
       format.html { redirect_to @line_item.cart, notice: 'Line item was successfully destroyed.' }
+
       format.json { head :no_content }
     end
   end
+
+  def decrement
+    li =LineItem.find(params[:line_item_id])
+    if li.quantity > 1
+      li.update(:quantity => li.quantity-1)
+    else
+      li.destroy
+    end
+    respond_to do |format|
+
+      format.html { redirect_to store_index_url }
+      format.js
+      format.json { render action: :show, status: :created, location: @line_item }
+    end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
