@@ -6,6 +6,13 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
+  <% if @counter > 5  %>
+      <p> Home counter = <%= @counter %></p>
+  <% else %>
+      <p>Home counter is empty</p>
+  <% end %>
+
+
 <ul class="catalog">
   <% cache @products do %>
     <% @products.each do |product| %>
