@@ -67,17 +67,18 @@ class LineItemsController < ApplicationController
   end
 
   def decrement
-    li =LineItem.find(params[:line_item_id])
-    if li.quantity > 1
-      li.update(:quantity => li.quantity-1)
-    else
-      li.destroy
-    end
+    @line_item =LineItem.find(params[:line_item_id])
     respond_to do |format|
-
-      format.html { redirect_to store_index_url }
-      format.js
-      format.json { render action: :show, status: :created, location: @line_item }
+      if @line_item.decrement_or_destroy
+        format.html { redirect_to store_index_url, notice: 'Your cart is currently empty' }
+        format.js   {
+          @current_item = @line_item
+          render :decrement
+        }
+      else
+        format.html { render :new }
+        format.json { render json: @line_item.errors, status: :unprocessable_entity }
+      end
     end
   end
 
