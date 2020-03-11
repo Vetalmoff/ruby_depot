@@ -27,6 +27,9 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contacts</a></li>
           <li><p><%= Time.now %></p></li>
+          <li><p><%= session[:user_id] %></p></li>
+          <li><p><%= session[:cart_id] %></p></li>
+
         </ul>
       </nav>
           <main class="<%= controller.controller_name %>">
