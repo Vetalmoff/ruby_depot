@@ -6,12 +6,12 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
-
-  resources :users
-  resources :orders
-  resources :carts
-  root 'store#index', as: 'store_index'
-
+  scope '(:locale)' do
+    resources :users
+    resources :orders
+    resources :carts
+    root 'store#index', as: 'store_index'
+  end
   resources :products
 
   resources :line_items do

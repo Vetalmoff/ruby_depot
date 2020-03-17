@@ -22,10 +22,10 @@
         </div>
           <% end %>
         <ul>
-          <li><a href="/">Home</a> </li>
-          <li><a href="/questions">Questions</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="/contact">Contacts</a></li>
+          <li><a href="/"><%= t('.home') %></a> </li>
+          <li><a href="/questions"><%= t('.questions') %></a></li>
+          <li><a href="/news"><%= t('.news') %></a></li>
+          <li><a href="/contact"><%= t('.contact') %></a></li>
           <li><p><%= Time.now %></p></li>
           <li><p><%= session[:user_id] %></p></li>
           <li><p><%= session[:cart_id] %></p></li>
