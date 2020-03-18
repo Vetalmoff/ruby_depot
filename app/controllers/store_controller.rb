@@ -2,13 +2,11 @@ class StoreController < ApplicationController
   skip_before_action :authorize
   include CurrentCart
   before_action :set_cart
-
-
   def index
-    @products = Product.order(:title)
+    if params[:set_locale]
+      redirect_to store_index_url(locale: params[:set_locale])
+    else
+      @products = Product.order(:title)
+    end
   end
 end
-def number_to_currency_E(number)
-  number_to_currency(number, :unit => "грн", :separator => ",", :delimiter => " ", precision: 2, format: "%n %u")
-end
-

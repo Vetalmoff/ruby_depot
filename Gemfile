@@ -34,6 +34,7 @@ gem 'websocket-extensions', '~>0.1.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'webpacker', '~>3.0'
+gem 'i18n-js'
 
 
 group :development, :test do
